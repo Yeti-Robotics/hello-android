@@ -37,5 +37,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button button3 = (Button) findViewById(R.id.movie_activity_button);
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, MovieListActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

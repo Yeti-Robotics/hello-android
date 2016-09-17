@@ -15,7 +15,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SecondActivity" android:label="@string/second_activity_label"/>
+        <activity
+            android:name=".SecondActivity"
+            android:label="@string/second_activity_label" />
+        <activity android:name=".MovieListActivity"></activity>
     </application>
 
 </manifest>
