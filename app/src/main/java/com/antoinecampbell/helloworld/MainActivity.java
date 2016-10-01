@@ -1,7 +1,6 @@
 package com.antoinecampbell.helloworld;
 
 import android.content.Intent;
-import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -43,6 +42,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, MovieListActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button button4 = (Button) findViewById(R.id.github_repo_button);
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, GithubRepoActivity.class);
                 startActivity(intent);
             }
         });
